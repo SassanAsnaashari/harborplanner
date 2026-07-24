@@ -7,10 +7,10 @@ import de.harbor.hafen.model.Koordinate;
  */
 public abstract class Schiff {
 
-    private final int nummer;
-    private final String name;
-    private final double tankGroesse;
-    private final int maximaleLadung;
+    private int nummer;
+    private String name;
+    private double tankGroesse;
+    private int maximaleLadung;
     private Koordinate koordinate;
     private double kraftstoffMenge;
     private int ladung;
@@ -60,6 +60,38 @@ public abstract class Schiff {
         return angelegt;
     }
 
+    public void setNummer(int nummer) {
+        this.nummer = nummer;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setTankGroesse(double tankGroesse) {
+        this.tankGroesse = tankGroesse;
+    }
+
+    public void setMaximaleLadung(int maximaleLadung) {
+        this.maximaleLadung = maximaleLadung;
+    }
+
+    public void setKoordinate(Koordinate koordinate) {
+        this.koordinate = koordinate;
+    }
+
+    public void setKraftstoffMenge(double kraftstoffMenge) {
+        this.kraftstoffMenge = kraftstoffMenge;
+    }
+
+    public void setLadung(int ladung) {
+        this.ladung = ladung;
+    }
+
+    public void setAngelegt(boolean angelegt) {
+        this.angelegt = angelegt;
+    }
+
     public double tanken(double menge) {
         if (menge <= 0) {
             return 0;
@@ -106,5 +138,9 @@ public abstract class Schiff {
 
     // TODO implement toString with lecture 2
 
-    // TODO implement equals with lecture 2
+
+    // TODO implement equals and hashCode with lecture 2
+
+    // TODO implement compareTO with lecture 2
+
 }

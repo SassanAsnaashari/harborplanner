@@ -71,6 +71,7 @@ public class HafenServiceImpl implements HafenService {
 
     @Override
     public List<Schiff> alleSchiffe() {
+        // TODO return sorted list with lecture 2
         return schiffService.alleSchiffe();
     }
 

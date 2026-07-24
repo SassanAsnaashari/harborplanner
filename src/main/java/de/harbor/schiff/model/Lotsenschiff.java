@@ -2,10 +2,12 @@ package de.harbor.schiff.model;
 
 import de.harbor.hafen.model.Koordinate;
 
+import java.io.Serializable;
+
 /**
  * Kleines Schiff, das andere Schiffe im Hafen unterstuetzt.
  */
-public class Lotsenschiff extends Schiff {
+public class Lotsenschiff extends Schiff implements Cloneable{
 
     private boolean imEinsatz;
 
@@ -26,4 +28,6 @@ public class Lotsenschiff extends Schiff {
     public void einsatzBeenden() {
         imEinsatz = false;
     }
+
+    // TODO implement clone method with lecture 2
 }

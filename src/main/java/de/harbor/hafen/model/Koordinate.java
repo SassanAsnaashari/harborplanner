@@ -1,5 +1,7 @@
 package de.harbor.hafen.model;
 
+import java.util.Objects;
+
 /**
  * Beschreibt eine Position auf einer einfachen 2D-Karte.
  */
@@ -30,4 +32,5 @@ public class Koordinate {
     public String toString() {
         return "(" + x + ", " + y + ")";
     }
+    // TODO implement me with lecture 2
 }
